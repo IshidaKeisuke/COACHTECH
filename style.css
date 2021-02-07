@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -138,7 +126,7 @@ li{
 	margin-top: 40px;
 	margin-left: 65px;
 	z-index: 2;
-	color: white;
+	color: black;
 }
 .section h2{
 	font-weight: bold;
@@ -183,28 +171,37 @@ li{
 	border: 1px solid black;
 	left:45%;
 }
-.company img{
-	position:absolute;
-	left: 25%;
-	width: 50%;
-	height: 20%;
+.double{
+	display: flex;
 }
-.company h2,.company p{
-	position: relative;
-	margin: 0 auto;
+.company{
+	background-image: url(company.jpeg);
+	background-repeat: no-repeat;
+	background-size:100% ;
+	height: 50%;
+	width: 15%;
+	color: white;
+	text-align: center;
+	margin: auto ;
+	padding:12%;
 }
-.recruit img{
-	position:absolute;
-	float: right;
-	right: 0;
-	width: 50%;
-	height: 20%;
+.recruit{
+	background-image: url(recruit.jpg);
+	background-repeat: no-repeat;
+	background-size:100% ;
+	height: 50%;
+	width: 15%;
+	color: white;
+	text-align: center;
+	margin: auto ;
+	padding:12%;
 }
 .question{
 	background-color: black;
-	margin: 0 auto;
+	margin: 10%;
 	height: 125px;
 	width: 80%;
+	color: white;
 }
 .faq{
 	float: left;
@@ -233,4 +230,107 @@ li{
 .inquiry h2{
 	font-size: 35px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 10px;
+}
+.inquiry p{
+	padding: 15px;
+}
+.inquiry h3{
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 100;
+}
+.tell{
+	border: 1px solid white;
+}
+footer{
+	background-color: black;
+}
+.small{
+	color: white;
+	text-align: center;
+}
+@media screen and (max-width:768px){
+  .hamburger {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+	top: 15px;
+	right: 40px;
+	transition: 0.4s;
+  }	
+  .hamburger span {
+	position: absolute;
+	left: 3px;
+	display: block;
+	width: 35px;
+	height: 2px;
+	background-color: #fff;
+	transition: 0.8s;
+  }
+  .hamburger span:nth-of-type(1){
+	  top: 10px;
+  }
+  .hamburger span:nth-of-type(2){
+	  top: 20px;
+  }
+  .hamburger span:nth-of-type(3){
+	  top: 30px;
+  }
+  .wrapper li{
+	  display: none;
+  }
+  .main{
+	background-image: url("eyecatch.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+
+  }
+  .text p{
+	  font-size: 60px;
+	  font-weight: bold;
+  }
+  /* 質問ここから */
+  .notice{
+	display: block;
+}
+  .info{
+	  margin-right: 0px;
+  }
+  .info p{
+	background-color: white;
+	float:left;
+	bottom: 0%;
+	text-align: center;
+  }
+  .news p{
+	text-align: center;
+	background-color: black;
+	color: white;
+	bottom: 0%;
+	padding: 10px;
+	float: right;
+  }
+  /* 質問ここまで */
+  /* いろいろ試してみたのですが、お手本のように横並びにならないのですが、どうしたらよいでしょうか */
+  .content img{
+	  display: none;
+	}
+	.content h2{
+		font-size: 30px;
+		font-weight: 200;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+  .content p{
+		line-height: 20px;
+		padding: 20px;
+		letter-spacing: 2px;
+	}
+	.service{
+		margin-top: 30%;
+	}
 }
