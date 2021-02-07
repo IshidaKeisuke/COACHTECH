@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang = "ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width,initial-scale = 1">
-    <title>LP</title>
-    <link rel = "stylesheet" href = "style.css">
-</head>
-<body>
-    <div class = "wrapper">
-        <div class = "header-logo">estra inc.</div>
+<html lang = "ja">  
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale = 1">
+        <title>LP</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class = "header-logo">estra inc.</div>
+            <div class = "hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li>home</li>
                 <li>about</li>
@@ -22,13 +27,15 @@
         <div class = "text">
             <p>機械ではできない仕事を</p>
         </div>
-        <div class = "info">
-            <p>2019/01/01<br>
-                ニュースタイトルがここには入ります。3月の決算報告書
-            </p>
-        </div>
-        <div class = "news">
-            <p>news</p>
+        <div class = "notice">
+            <div class = "info">
+                <p>2019/01/01<br>
+                    ニュースタイトルがここには入ります。3月の決算報告書
+                </p>
+            </div>
+            <div class = "news">
+                <p>news</p>
+            </div>
         </div>
     </div>    
     <div class = "content">
@@ -64,7 +71,6 @@
             <h3>コーチングのミッション</h3>
             <p>ユーザーが求める物を分析し、ユーザビリティを備えた最適なサイトを提供。建設業から美容、<br>
                 ブライダル、飲食店まで多種多様な業績の制作実績があります</p>
-            <!-- ここ質問 -->
             <div class = "detail">
             <p><span class="details">サービス詳細</span></p>
             </div>
@@ -72,12 +78,10 @@
     </div>
     <div class = "double">
         <div class = "company">
-            <img src = "company.jpeg">
             <h2>company</h2>
             <p>会社概要</p>
         </div>
         <div class = "recruit">
-            <img src = "recruit.jpg">
             <h2>recruit</h2>
             <p>採用情報</p>
         </div>
@@ -96,6 +100,8 @@
             </p>
             <span class = "tell">お問い合わせへ</span>
         </div>
+    </div>
+        <footer>
             <div class="wrapper">
                 <div class="header-logo">estra inc.</div>
                     <ul>
@@ -107,7 +113,9 @@
                         <li>contact</li>
                     </ul>
                 </div>
-                <small>Copyright 2019 estra inc. All Rights Reserved.</small>
-            </div>
+                <div class = "small">
+                    <small>Copyright 2019 estra inc. All Rights Reserved.</small>
+                </div>
+        </footer>
     </body>
 </html>

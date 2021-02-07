@@ -295,25 +295,25 @@ footer{
 	  font-weight: bold;
   }
   /* 質問ここから */
-  .notice{
-	display: block;
+.notice{
+	display: flex;
 }
   .info{
 	  margin-right: 0px;
   }
   .info p{
 	background-color: white;
-	float:left;
 	bottom: 0%;
 	text-align: center;
+	display: block;
   }
   .news p{
+	display: flex;
 	text-align: center;
 	background-color: black;
 	color: white;
 	bottom: 0%;
 	padding: 10px;
-	float: right;
   }
   /* 質問ここまで */
   /* いろいろ試してみたのですが、お手本のように横並びにならないのですが、どうしたらよいでしょうか */
@@ -333,4 +333,9 @@ footer{
 	.service{
 		margin-top: 30%;
 	}
+	.supplement{
+	color: black;
+	background-color: white;
+	padding: 3px;
+}
 }
